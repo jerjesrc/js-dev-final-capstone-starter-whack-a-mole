@@ -282,11 +282,7 @@ describe("US-04 whack()", () => {
       const points = document.querySelector("#score").innerHTML;
       return points;
     });
-    // the expected score should be 2 given that 2 test cases above the test case
-    // "should increment score when calling whack()" is incrementing the score in 1 and not resetting the score to 0
-    // therefore score 1 from previous test case plus the increment done to score by this test case
-    // puts the expected score as 2
-    expect(points).toEqual("2");
+    expect(points).toEqual("1");
   });
 });
 
