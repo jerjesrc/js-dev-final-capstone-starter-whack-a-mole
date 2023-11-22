@@ -193,6 +193,7 @@ function updateTimer() {
 *
 */
 function startTimer() {
+  timerDisplay.textContent = time;
   timer = setInterval(updateTimer, 1000);
   return timer;
 }
